@@ -1,11 +1,13 @@
 package com.example.journey.data
 
+import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
 import com.example.journey.model.Note
 import kotlinx.coroutines.flow.Flow
 
+@Dao
 interface NoteDao
 {
     @Query("SELECT * FROM notes")
